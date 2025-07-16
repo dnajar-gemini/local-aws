@@ -45,7 +45,7 @@
 
 ## Interact with the Container
 
-### see db records
+### seed db records
 
 `CONTAINER_ID=$(docker ps | grep final-function | awk '{print $1}')
 docker exec -it $CONTAINER_ID /bin/bash -c "sqlite3 -column -header /tmp/lambda.db 'SELECT * FROM pdf_metadata;'"`
